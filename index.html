@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BabyJuegos</title>
+        <meta name="description" content="Infantil">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css"/>
+        <link rel="stylesheet" href="css/960_12_col.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="icon" href="favicon.ico">
+        <!--Importamos librerias JQuery-->
+        <script src="js/jquery-3.2.1/jquery-3.2.1.js"></script>
+        <script src="js/jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <!--Importacion archivo Js-->
+        <script src="js/juego.js"></script>
+    </head>
+    <body>
+        <!--Contenedor global de 12 columnas-->
+        <div class="container_12">
+        <header>
+            <!--Logo-->
+            <div class="grid_7 prefix_1">
+                <div class="logo">
+                    <h1>BabyJuegos</h1>
+                </div>    
+            </div>
+            <!--Search-->
+            <div class="grid_4">
+                <div class="search">
+                    <form action="#">
+                    <p>
+                       <input placeholder="Buscar" type="text" name="buscar" id="buscar" />
+                    </p>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>        
+        </header>
+        <nav> 
+            <div class="grid_8 prefix_2 suffix_2 ">
+                <!--menu-->
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">PLAY</a></li>   
+                        <li><a href="index.html">RESTART</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </nav>  
+        <section>
+            <div class="grid_12">
+                <!--descripcion-->
+                <div class="descripcion">
+                    <!--Instrucciones y mensaje ganador-->
+                    <p id="ganado">Une las piezas de puzzle... Suerte!</p>
+                    <!--Imagen blanca/sustituye por unicornio-->
+                    <img id="unicornio" src="img/blanco.png" alt="blanco">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_5 suffix_7">
+                <!--piezzas relleno-->
+                <div class="figuras1">
+                    <ul>
+                        <li><img id="arrastrar1" src="img/ficha2_relleno.png" alt="ficha2_rellena"></li>     
+                        <li><img id="arrastrar2" src="img/ficha3_relleno.png" alt="ficha3_rellena"></li>
+                        <li><img id="arrastrar3" src="img/ficha1_relleno.png" alt="ficha1_rellena"></li>    
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_5 suffix_7">
+                <!--piezzas borde-->
+                <div class="figuras2">
+                    <ul>
+                        <li><img id="destino2" src="img/ficha1.png" alt="ficha1"></li>
+                        <li><img id="destino3" src="img/ficha2.png" alt="ficha2"></li> 
+                        <li><img id="destino1" src="img/ficha3.png" alt="ficha2"></li>   
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_10 suffix_2 prefix_2">
+                <!--mensaje figuras correctas-->
+                <div id="mensaje"></div>
+                <!--Audios-->
+                <audio id="sonido1" src="audio/mario-bros-woo-hoo.mp3"></audio>
+                <audio id="sonido2" src="audio/basketball-game.mp3"></audio>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <footer>
+            <div class="grid_4 prefix_4 suffix_4">
+                <!--copy-->
+               <div class="copy">
+                    <a href="#" target="_blank"><p>&copy;BabyJuegos@gmail.com</p></a>
+                </div>
+            </div>
+            <div class="clear"></div> 
+        </footer>
+        </div>
+    </body>
+</html>
